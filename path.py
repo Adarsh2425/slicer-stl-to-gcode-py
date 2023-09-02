@@ -1,7 +1,10 @@
+import os
 import svgwrite
 import csv
 import math
-import os
+
+
+
 
 '''
 Codes generate a print head path from a contour data set a specific z-level
