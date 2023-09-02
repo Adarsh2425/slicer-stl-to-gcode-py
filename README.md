@@ -1,15 +1,13 @@
-# STL to G-code Slicer
+# stl-slicer
 
-A simple Python program for converting STL files into G-code for 3D printing.
+Python-based STL slicer for generating line paths for 3D printing
 
-## Overview
+Program designed to open and view ASCII STL files and then slice them for 3D printing operations. Supports variable 
+slice heights and spacing between infill grid lines. Geometry moved to fit within a 8x8x6 inch print bed as large as
+possible according to the part orientation.
 
-This program provides a basic solution for slicing 3D models in STL format into G-code, which can be used to control 3D printers. It includes minimal features and is intended for educational purposes.
+Output files consist of an SVG file for each slice of the model showing the model outlines and the infill pattern and a
+CSV file that lists the coordinates of the print head at different times and whether or not the extruder is on during
+the move to that position.
 
-## Features
-
-- **STL to G-code Conversion:** Convert STL files into G-code for 3D printing.
-- **Basic Slicing:** Slice the 3D model into layers at a user-defined layer height.
-- **Minimal Configuration:** Limited configuration options for layer height and output file name.
-- **Easy to Use:** Simple command-line interface for running the slicer.
-
+Freeze using PyInstaller: ```pyinstaller.exe --onefile --windowed --icon=cube.ico Slicer.py```
