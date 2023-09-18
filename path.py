@@ -2,6 +2,10 @@ import os
 import svgwrite
 import csv
 import math
+
+
+
+
 '''
 Codes generate a print head path from a contour data set a specific z-level
  - svgcreate: create an SVG file composed of line segments connecting each of the point pairs on z slice
